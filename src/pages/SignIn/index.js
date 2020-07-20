@@ -3,11 +3,7 @@ import React from 'react';
 // import { Container } from './styles';
 
 function SignIn() {
-  return (
-    <div>
-      <h1>Sign In</h1>
-    </div>
-  );
+  return <h1>Sign In</h1>;
 }
 
 export default SignIn;

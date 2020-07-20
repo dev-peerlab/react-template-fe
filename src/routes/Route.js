@@ -5,6 +5,7 @@ import PrimarySearchAppBar from '../components/PrimarySearchAppBar';
 import AppWrapper from '../components/AppWrapper';
 import ContentWrapper from '../components/ContentWrapper';
 import Footer from '../components/Footer';
+import ButtonAppBar from '../components/ButtonAppBar';
 
 export default function RouteWrapper({
   component: Component,
@@ -21,6 +22,7 @@ export default function RouteWrapper({
             <ContentWrapper>
               <Component {...props} />
             </ContentWrapper>
+            <Footer />
           </AppWrapper>
         )}
       />
@@ -49,6 +51,7 @@ export default function RouteWrapper({
       {...rest}
       render={(props) => (
         <AppWrapper>
+          <ButtonAppBar />
           <ContentWrapper>
             <Component {...props} />
           </ContentWrapper>
